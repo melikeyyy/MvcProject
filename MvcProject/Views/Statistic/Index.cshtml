@@ -1,0 +1,66 @@
+﻿@using EntityLayer.Concrete
+@model List<Category>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+
+<h2>İstatistikler</h2>
+
+<html>
+<head>
+<br />
+</head>
+<body>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="small-box bg-orange">
+                <div class="inner" style="text-align: center">
+                    <br />
+
+                    <sup style="font-size: 25px">Toplam Kategori Sayısı</sup>
+                    <h3><sup style="font-size: 35px">@ViewBag.result1</sup></h3>
+                </div>  <a href="#" class="small-box-footer"></a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="small-box bg-cyan">
+                <div class="inner" style="text-align: center">
+                    <br />
+                    <sup style="font-size: 25px">Yazılım Kategorisine Ait Başlık Sayısı</sup>
+                    <h3><sup style="font-size: 35px">@ViewBag.result2</sup></h3>
+                </div><a href="#" class="small-box-footer"></a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="small-box bg-orange">
+                <div class="inner" style="text-align: center">
+                    <br />
+                    <sup style="font-size: 25px">Yazar adında "a" harfi geçen yazar sayısı</sup>
+                    <h3><sup style="font-size: 35px">@ViewBag.result3</sup></h3>
+                </div><a href="#" class="small-box-footer"></a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="small-box bg-cyan">
+                <div class="inner" style="text-align: center">
+                    <br />
+                    <sup style="font-size: 25px">En fazla başlığa sahip kategori adı</sup>
+                    <h3><sup style="font-size: 35px">@ViewBag.result4</sup></h3>
+                </div> <a href="#" class="small-box-footer"></a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="small-box bg-orange">
+                <div class="inner" style="text-align: center">
+                    <br />
+                    <sup style="font-size: 25px">Kategori tablosunda durumu true olanlar ile false olanlar arsındaki fark</sup>
+                    <h3><sup style="font-size: 35px">@ViewBag.result5</sup></h3>
+                </div><a href="#" class="small-box-footer"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
